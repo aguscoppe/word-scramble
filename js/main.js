@@ -204,15 +204,12 @@ function startGame() {
 
   if (gameDifficulty === "easy") {
     chosenWord = chooseWord(easyArray);
-    scrambledWord = scrambleWord(chosenWord);
   } else if (gameDifficulty === "medium") {
     chosenWord = chooseWord(mediumArray);
-    scrambledWord = scrambleWord(chosenWord);
   } else if (gameDifficulty === "hard") {
     chosenWord = chooseWord(hardArray);
-    scrambledWord = scrambleWord(chosenWord);
   }
-
+  scrambledWord = scrambleWord(chosenWord);
   document.getElementById("word").innerHTML = scrambledWord.toUpperCase();
 }
 
